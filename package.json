@@ -1,19 +1,31 @@
 {
-  "name": "covid",
-  "version": "0.1.0",
-  "private": true,
+  "name": "covid-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "clean": "rm dist/bundle.js",
+    "start": "parcel public/index.html --host 127.0.0.1 --port 8080",
+    "build-prod": "parcel build public/index.html"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
+    "vuera": "^0.2.7",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
@@ -28,6 +40,9 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
     "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }

@@ -1,24 +1,4 @@
-# covid
+# COVID DATA SOURCE
+Get latest trusted data on COVID-19 in Uganda
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Ceck App here [Covid App](https://covid.linearc.biz/)
