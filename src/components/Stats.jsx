@@ -17,7 +17,7 @@ function Stats() {
                 <div className="wrapper">
                 {x}
                 {
-                    coviddata.filter(data=>data.country.match(re)).sort((data1,data2)=>(data1.cases.total < data2.cases.total)?1:-1).map((data,index)=>{
+                    coviddata.filter(data=>data.country.match(re)&&data.country!="All").sort((data1,data2)=>(data1.cases.total < data2.cases.total)?1:-1).map((data,index)=>{
                         return <CountryStats key={index} data={data} />
                     })
                 }
