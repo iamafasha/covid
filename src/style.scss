@@ -1,5 +1,14 @@
 #app{
+
+    .news-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+    }
     .stats{
+        
+        
+        
         .search{
         position: relative;
         >.container{
