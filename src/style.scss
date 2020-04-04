@@ -1,0 +1,45 @@
+#app{
+    .stats{
+        .search{
+        position: relative;
+        >.container{
+            background: #ffffff;
+            position: fixed;
+            z-index: 2;
+            padding:1.5em 3em 0.8em 3em ;
+            border-bottom:1px solid rgba(105, 105, 105, 0.527) ;
+        }
+    }
+
+    >.covid-countries{
+        padding-top: 5em;
+        .country-name{
+            padding:3px 6px;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    .data{ 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        ul{
+        border-color: transparent;
+        width: 200%;
+        border-style: solid;
+        display: flex;
+        flex-direction: row;
+        -webkit-overflow-scrolling: touch;
+        li{
+            padding:0.2em 0.5em;
+            font-size: 12px;
+            height:100px;
+            margin-right: 16px;
+            max-height: 100px;
+            min-width: 100px;
+        }
+    }
+    }
+}
+}

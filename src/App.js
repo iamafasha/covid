@@ -1,9 +1,15 @@
 import React from 'react'
+import News from './components/News';
+import Stats from './components/Stats';
+import Data from './context/Data';
 
 function App() {
     return (
         <div>
-            App
+            <Data>
+                <News />
+                <Stats />
+            </Data>
         </div>
     )
 }

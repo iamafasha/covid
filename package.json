@@ -11,13 +11,15 @@
   },
   "scripts": {
     "clean": "rm dist/bundle.js",
-    "start": "parcel public/index.html --host 127.0.0.1 --port 8080",
+    "start": "parcel public/index.html --host 127.0.0.1 --port 8080 --https",
     "build-prod": "parcel build public/index.html"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "twit": "^2.2.11",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuera": "^0.2.7",
