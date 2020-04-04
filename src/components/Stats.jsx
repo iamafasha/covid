@@ -1,7 +1,6 @@
 import React, {useContext} from 'react'
 import { DataContext } from './../context/Data';
 import CountryStats from './CountryStats';
-import Search from './Search';
 
 function Stats() {
      const { coviddata , search,covidloader } = useContext(DataContext) ;
@@ -14,7 +13,6 @@ function Stats() {
      }  
     return (
         <div className="stats">
-            <Search />
             <div className="covid-countries">
                 <div className="wrapper">
                 {x}

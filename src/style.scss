@@ -1,27 +1,27 @@
 #app{
-
-    .news-wrapper {
-        display: flex;
-        justify-content: center;
-        padding-top: 12px;
-    }
-    .stats{
-        
-        
-        
+    position: relative;
+    .news{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background: #ffffff;
+        .news-wrapper {
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+        }
         .search{
-        position: relative;
-        >.container{
-            background: #ffffff;
-            position: fixed;
-            z-index: 2;
-            padding:1.5em 3em 0.8em 3em ;
-            border-bottom:1px solid rgba(105, 105, 105, 0.527) ;
+            >.container{
+                padding:1.5em 3em 0.8em 3em ;
+                border-bottom:1px solid rgba(105, 105, 105, 0.527) ;
+            }
         }
     }
+    
+    .stats{
 
     >.covid-countries{
-        padding-top: 5em;
+        padding-top: 7.3em;
         .country-name{
             padding:3px 6px;
         }
