@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState }from 'react'
 export const DataContext = createContext()
 
 function Data(props) {
-    const [coviddata, setcoviddata] = useState(JSON.parse(localStorage.getItem('covid_data')))
+    const [coviddata, setcoviddata] = useState([])
     const [covidloader, setCovidloader]=useState(true)
     const [search, setsearch] = useState("")
     useEffect(() => {
@@ -31,6 +31,7 @@ function Data(props) {
             if(temp_data==null||temp_data==[]){
                 setCovidloader(undefined);
             }else{
+                setcoviddata(JSON.parse(localStorage.getItem('covid_data')))
                 alert('This data might not be upto date...Connect to internet')
             }
         });
