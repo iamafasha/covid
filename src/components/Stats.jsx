@@ -4,7 +4,12 @@ import CountryStats from './CountryStats';
 
 function Stats() {
      const { coviddata , search,covidloader } = useContext(DataContext) ;
-     const re=new RegExp(search,"gi")
+     let re;
+     try {
+        re=new RegExp(search,"gi")
+     } catch (error) {
+        re=new RegExp("","gi")
+     }
      let x;
      if(covidloader===true){
         x=<div>

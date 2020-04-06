@@ -6,6 +6,9 @@ function Data(props) {
     const [coviddata, setcoviddata] = useState([])
     const [covidloader, setCovidloader]=useState(true)
     const [search, setsearch] = useState("")
+    const formatNumber=(num)=>{
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+      }
     useEffect(() => {
         //Covid Stat
         const myHeaders = new Headers();
@@ -37,7 +40,7 @@ function Data(props) {
         });
     },[])
     return (
-    <DataContext.Provider value={{ coviddata, search, setsearch,covidloader, setCovidloader }} >{props.children}</DataContext.Provider>
+    <DataContext.Provider value={{formatNumber, coviddata, search, setsearch,covidloader, setCovidloader }} >{props.children}</DataContext.Provider>
     )
 }
 export default Data
