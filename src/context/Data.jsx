@@ -9,6 +9,7 @@ function Data(props) {
     const formatNumber=(num)=>{
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
       }
+      
     useEffect(() => {
         //Covid Stat
         const myHeaders = new Headers();
