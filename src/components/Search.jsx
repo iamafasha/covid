@@ -7,7 +7,12 @@ function Search() {
     const [tags, settags] = useState([])
     const delimiters = [188, 13];
     const stringmaker = (currentstr, addingstr,index,sourceArray) => {
-        return currentstr.text +"|"+ addingstr.text;
+        if(index==1){
+            return currentstr.text +"|"+ addingstr.text;
+        }else{
+            return currentstr +"|"+ addingstr.text;
+        }
+        
     }
 
     useEffect(() => {
@@ -39,7 +44,8 @@ function Search() {
                     handleDelete={handleRemoveTag}
                     handleAddition={handleAdditionTag}
                     inline={true}
-                    placeholder="Filter Countries"
+                    placeholder="Filter countries"
+                    autofocus={true}
                      />
             </div>
              </div>
