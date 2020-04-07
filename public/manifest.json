@@ -1,7 +1,7 @@
 {
   "short_name": "Covid Data",
   "name": "CovidData",
-  "theme_color": "#4A90E2",
+  "theme_color": "#FFFFFF",
   "background_color": "#F7F8F9",
   "display": "standalone",
   "icons": [
