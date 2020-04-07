@@ -1,8 +1,8 @@
 {
   "short_name": "Covid Data",
   "name": "CovidData",
-  "theme_color": "#FFFFFF",
-  "background_color": "#F7F8F9",
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "icons": [
     {
@@ -26,5 +26,5 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/?utm_source=launcher"
+  "start_url": "/"
 }
