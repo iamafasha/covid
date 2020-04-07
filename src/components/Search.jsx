@@ -33,24 +33,37 @@ function Search() {
     const handleAdditionTag=(tag)=> {
         settags([...tags, tag]);
     }
+    const handleInputChange = (input) => {
+      if (tags.length == 0) {
+        setsearch(input);
+      }
+      if (tags.length == 1) {
+        setsearch(tags[0].text+"|"+input);
+      }
+      if (tags.length > 1) {
+        setsearch(tags.reduce(stringmaker) + "|" + input);
+      }
+    };
 
     return (
-        <div className="search">
-             <div className="container">
-             <div className="input-group">
+      <div className="search">
+        <div className="container">
+          <div className="input-group">
             {/* <input onChange={(e)=>setsearch(e.target.value)}  className="form-control mr-sm-2" type="search" placeholder="Search Country"></input> */}
-            <ReactTags tags={tags}
-                    delimiters={delimiters}
-                    handleDelete={handleRemoveTag}
-                    handleAddition={handleAdditionTag}
-                    inline={true}
-                    placeholder="Filter countries"
-                    autofocus={true}
-                     />
-            </div>
-             </div>
+            <ReactTags
+              tags={tags}
+              delimiters={delimiters}
+              handleDelete={handleRemoveTag}
+              handleAddition={handleAdditionTag}
+              inline={true}
+              placeholder="Filter countries"
+              autofocus={true}
+              handleInputChange={(input) => handleInputChange(input)}
+            />
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 
 export default Search
