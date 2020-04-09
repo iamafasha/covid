@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://covid-mobile.netlify.com/*"
+  to = "https://covid-mobile.netlify.com/:splat"
+  status = 301
+  force = true
