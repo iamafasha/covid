@@ -1,3 +1,4 @@
 # redirect netlify sitename to your sitename for SEO purposes,
 # to avoid duplicate content.  Do this for http and https
+http://www.covid-mobile.netlify.com/* https://covid-mobile.netlify.com/:splat 301!
 http://covid-mobile.netlify.com/* https://covid-mobile.netlify.com/:splat 301!
