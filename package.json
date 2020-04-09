@@ -11,16 +11,17 @@
   },
   "scripts": {
     "clean": "rm dist/bundle.js",
-    "start": "parcel public/index.html --host 127.0.0.1 --port 8080 --https",
-    "build-prod": "parcel build public/index.html"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
     "react-dnd": "5.0.0",
     "react-dnd-html5-backend": "^3.0.2",
-    "react-dom": "^16.13.1",
     "react-tag-input": "^6.4.2",
     "twit": "^2.2.11",
     "vue": "^2.6.11",
@@ -50,5 +51,20 @@
     "sass": "^1.26.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+    "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
