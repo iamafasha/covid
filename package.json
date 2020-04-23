@@ -6,6 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "homepage":"https://covid.linearc.biz",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

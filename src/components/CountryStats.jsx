@@ -1,8 +1,14 @@
 import React,{useContext} from 'react'
 import { DataContext } from './../context/Data';
 
-function CountryStats({data}) {
+const CountryStats=({data})=> {
     const { formatNumber } = useContext(DataContext)
+    let test;
+    if(data.tests.total==null){
+        test=data.tests.total='No Available'
+    }else{
+        test=formatNumber(data.tests.total)
+    }
     return (
         <div className="country">
                         <div className="country-wrapper">
@@ -28,6 +34,10 @@ function CountryStats({data}) {
                             <li className="card text-white bg-danger mb-3  deaths">
                                 <h6>Deaths</h6>
                                 <h3>{formatNumber(data.deaths.total)}</h3>
+                            </li>
+                            <li className="card text-white bg-success mb-3  active">
+                                <h6>Tests</h6>
+                                <h3>{test}</h3>
                             </li>
                             </ul>
                         </div>
