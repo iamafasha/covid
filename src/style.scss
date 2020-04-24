@@ -1,10 +1,15 @@
+body{
+    background:#07040499 !important;
+}
 #app{
+    background: #07040499;
+    color:white;
     position: relative;
     .news{
         position: fixed;
         width: 100%;
         z-index: 2;
-        background: #ffffff;
+        background: grey;
         .news-wrapper {
             display: flex;
             justify-content: center;
