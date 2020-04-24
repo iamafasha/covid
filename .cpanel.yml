@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/linearcb/covid.linearc.biz/
+    - export DEPLOYPATH=/home2/linearcb/covidgit/
     - /bin/cp -R * $DEPLOYPATH
