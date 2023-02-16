@@ -7,6 +7,7 @@ function Data(props) {
     const [covidloader, setCovidloader]=useState(true)
     const [search, setsearch] = useState("")
     const formatNumber=(num)=>{
+        num = num ?? 0;
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
       }
       
